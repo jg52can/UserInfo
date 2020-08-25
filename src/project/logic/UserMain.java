@@ -39,6 +39,12 @@ public class UserMain {
         User user3=new User();
         user3.setfName("George");
         user3.setlName("Thomas");
+        //fix web-5
+        Address address3=new Address();
+        address3.setCity("Toronto");
+        address3.setCountry("CA");
+        address3.setProvince("Ontario");
+        user3.setAddress(address3);
         //user3.setAge(30);
         user3.setDob("1988/01/23");
         user3.setSalary(1800.00);
@@ -61,7 +67,7 @@ public class UserMain {
             Boolean isCanadian = UserDetails.VerifyCountry(user3);
             System.out.println(UserDetails.FullName(user3) + " is " + isCanadian);
         } catch (NullPointerException e) {
-            System.out.println("User 3 entered "+e.getMessage()); ;
+            System.out.println("Entered value is "+e.getMessage()); ;
         }
 
 
