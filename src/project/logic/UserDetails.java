@@ -22,7 +22,7 @@ public class UserDetails {
 
     // TODO : RQ - 2
     public static Double SalaryAccumulated(User user){
-        int age = 0;
+        int age = 55;
         String province=user.getAddress().getProvince();
 
         if(province=="Ontario"){
